@@ -331,6 +331,7 @@ const buildParagraph = ({ children }: mdast.Paragraph, ctx: Context) => {
   }
   return new Paragraph({
     children: nodes,
+    alignment: AlignmentType.START,
     indent:
       ctx.indent > 0
         ? {
